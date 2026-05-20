@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: Customer-Churn-Prediction-Report-Engine
+Version: 1.0.0
+Summary: A report engine for customer churn prediction using machine learning models.
+Author: Hemachander002
+Author-email: sathyameena75@gmail.com
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: xgboost
+Requires-Dist: lightgbm
+Requires-Dist: catboost
+Requires-Dist: reportlab
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist
+Dynamic: summary
