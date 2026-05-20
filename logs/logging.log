@@ -1,0 +1,775 @@
+[2026-05-20 15:21:27,104: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<]
+[2026-05-20 15:21:27,104: ERROR: main: Argument path_to_yaml of type <class 'str'> to <function read_yaml at 0x000001BA7DA8EDD0> does not match annotation type <class 'pathlib.Path'>]
+Traceback (most recent call last):
+  File "E:\PROJECT\Customer churn\main.py", line 12, in <module>
+    obj.InitiateDataIngestionTrainingPipeline()
+  File "E:\PROJECT\Customer churn\src\customer_churn_prediction\pipeline\data_ingestion_pipeline.py", line 13, in InitiateDataIngestionTrainingPipeline
+    config=ConfigurationManager()
+  File "E:\PROJECT\Customer churn\src\customer_churn_prediction\config\configuration.py", line 11, in __init__
+    self.config=read_yaml(config_filepath)
+  File "E:\PROJECT\Customer churn\venv\lib\site-packages\ensure\main.py", line 870, in __call__
+    raise EnsureError(msg.format(arg=arg, f=self.f, t=templ, valt=type(value)))
+ensure.main.EnsureError: Argument path_to_yaml of type <class 'str'> to <function read_yaml at 0x000001BA7DA8EDD0> does not match annotation type <class 'pathlib.Path'>
+[2026-05-20 15:25:17,047: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<]
+[2026-05-20 15:25:17,051: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-20 15:25:17,051: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-20 15:25:17,052: ERROR: main: yaml file is empty]
+Traceback (most recent call last):
+  File "E:\PROJECT\Customer churn\src\customer_churn_prediction\utils\common.py", line 31, in read_yaml
+    return ConfigBox(content)
+  File "box/box.py", line 301, in box.box.Box.__init__
+box.exceptions.BoxValueError: First argument must be mapping or iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\PROJECT\Customer churn\main.py", line 12, in <module>
+    obj.InitiateDataIngestionTrainingPipeline()
+  File "E:\PROJECT\Customer churn\src\customer_churn_prediction\pipeline\data_ingestion_pipeline.py", line 13, in InitiateDataIngestionTrainingPipeline
+    config=ConfigurationManager()
+  File "E:\PROJECT\Customer churn\src\customer_churn_prediction\config\configuration.py", line 12, in __init__
+    self.params=read_yaml(params_filepath)
+  File "E:\PROJECT\Customer churn\venv\lib\site-packages\ensure\main.py", line 872, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "E:\PROJECT\Customer churn\src\customer_churn_prediction\utils\common.py", line 33, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2026-05-20 15:26:22,974: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<]
+[2026-05-20 15:26:22,977: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-20 15:26:22,978: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-20 15:26:22,978: ERROR: main: yaml file is empty]
+Traceback (most recent call last):
+  File "E:\PROJECT\Customer churn\src\customer_churn_prediction\utils\common.py", line 31, in read_yaml
+    return ConfigBox(content)
+  File "box/box.py", line 301, in box.box.Box.__init__
+box.exceptions.BoxValueError: First argument must be mapping or iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\PROJECT\Customer churn\main.py", line 12, in <module>
+    obj.InitiateDataIngestionTrainingPipeline()
+  File "E:\PROJECT\Customer churn\src\customer_churn_prediction\pipeline\data_ingestion_pipeline.py", line 13, in InitiateDataIngestionTrainingPipeline
+    config=ConfigurationManager()
+  File "E:\PROJECT\Customer churn\src\customer_churn_prediction\config\configuration.py", line 12, in __init__
+    self.params=read_yaml(params_filepath)
+  File "E:\PROJECT\Customer churn\venv\lib\site-packages\ensure\main.py", line 872, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "E:\PROJECT\Customer churn\src\customer_churn_prediction\utils\common.py", line 33, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2026-05-20 15:27:20,165: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<]
+[2026-05-20 15:27:20,169: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-20 15:27:20,170: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-20 15:27:20,170: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-05-20 15:27:20,170: INFO: common: created directory at: artifacts]
+[2026-05-20 15:27:20,183: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-05-20 15:27:21,134: INFO: data_ingestion: artifacts/data_ingestion/data.csv download! with following info: 
+Access-Control-Allow-Origin: https://render.githubusercontent.com
+content-disposition: attachment; filename=datasets-main.zip
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+cross-origin-resource-policy: cross-origin
+ETag: "6763cec6d94aec2b59dd925b5b21803ce040fd959f77d27799d1b165ed6d8128"
+Strict-Transport-Security: max-age=31536000
+Vary: Authorization,Accept-Encoding
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+Date: Wed, 20 May 2026 09:57:28 GMT
+Transfer-Encoding: chunked
+X-GitHub-Request-Id: 3295:193791:1000F:670B0:6A0D8588
+connection: close
+
+]
+[2026-05-20 15:27:21,142: INFO: data_ingestion_pipeline: >>>>>>> stage Data Ingestion Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 15:27:21,142: INFO: main: >>>>>>> stage Data Ingestion Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 15:43:36,752: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<]
+[2026-05-20 15:43:36,755: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-20 15:43:36,756: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-20 15:43:36,759: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-05-20 15:43:36,759: INFO: common: created directory at: artifacts]
+[2026-05-20 15:43:36,760: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-05-20 15:43:36,760: INFO: data_ingestion: File already exists]
+[2026-05-20 15:43:36,765: INFO: data_ingestion_pipeline: >>>>>>> stage Data Ingestion Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 15:43:36,765: INFO: main: >>>>>>> stage Data Ingestion Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 15:43:36,765: INFO: main: >>>>>>> stage Data Validation Stage started <<<<<<<]
+[2026-05-20 15:43:36,768: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-20 15:43:36,769: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-20 15:43:36,772: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-05-20 15:43:36,772: INFO: common: created directory at: artifacts]
+[2026-05-20 15:43:36,773: INFO: common: created directory at: artifacts/data_validation]
+[2026-05-20 15:43:36,795: ERROR: data_validation: 'Index' object has no attribute 'lower']
+Traceback (most recent call last):
+  File "E:\PROJECT\Customer churn\src\customer_churn_prediction\components\data_validation.py", line 18, in validate_data
+    actual_columns = set(data.columns.lower())
+AttributeError: 'Index' object has no attribute 'lower'
+[2026-05-20 15:43:36,796: INFO: main: >>>>>>> stage Data Validation Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 15:51:19,312: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<]
+[2026-05-20 15:51:19,315: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-20 15:51:19,316: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-20 15:51:19,319: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-05-20 15:51:19,320: INFO: common: created directory at: artifacts]
+[2026-05-20 15:51:19,320: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-05-20 15:51:19,320: INFO: data_ingestion: File already exists]
+[2026-05-20 15:51:19,326: INFO: data_ingestion_pipeline: >>>>>>> stage Data Ingestion Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 15:51:19,326: INFO: main: >>>>>>> stage Data Ingestion Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 15:51:19,326: INFO: main: >>>>>>> stage Data Validation Stage started <<<<<<<]
+[2026-05-20 15:51:19,329: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-20 15:51:19,330: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-20 15:51:19,333: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-05-20 15:51:19,333: INFO: common: created directory at: artifacts]
+[2026-05-20 15:51:19,333: INFO: common: created directory at: artifacts/data_validation]
+[2026-05-20 15:51:19,357: ERROR: data_validation: Data validation failed! Expected columns: {'PaymentMethod', 'Dependents', 'Churn', 'tenure', 'gender', 'customerID', 'MonthlyCharges', 'InternetService', 'Contract', 'TotalCharges', 'PaperlessBilling', 'SeniorCitizen', 'TechSupport', 'OnlineSecurity', 'Partner', 'StreamingMovies', 'StreamingTV', 'PhoneService', 'DeviceProtection', 'OnlineBackup', 'MultipleLines'}, Actual columns: {'multiplelines', 'customerid', 'paperlessbilling', 'tenure', 'contract', 'gender', 'deviceprotection', 'partner', 'onlinesecurity', 'streamingmovies', 'churn', 'phoneservice', 'onlinebackup', 'seniorcitizen', 'monthlycharges', 'techsupport', 'dependents', 'internetservice', 'totalcharges', 'paymentmethod', 'streamingtv'}]
+[2026-05-20 15:51:19,358: INFO: main: >>>>>>> stage Data Validation Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 15:52:27,040: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<]
+[2026-05-20 15:52:27,044: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-20 15:52:27,045: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-20 15:52:27,050: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-05-20 15:52:27,051: INFO: common: created directory at: artifacts]
+[2026-05-20 15:52:27,052: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-05-20 15:52:27,052: INFO: data_ingestion: File already exists]
+[2026-05-20 15:52:27,057: INFO: data_ingestion_pipeline: >>>>>>> stage Data Ingestion Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 15:52:27,058: INFO: main: >>>>>>> stage Data Ingestion Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 15:52:27,058: INFO: main: >>>>>>> stage Data Validation Stage started <<<<<<<]
+[2026-05-20 15:52:27,061: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-20 15:52:27,062: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-20 15:52:27,065: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-05-20 15:52:27,065: INFO: common: created directory at: artifacts]
+[2026-05-20 15:52:27,066: INFO: common: created directory at: artifacts/data_validation]
+[2026-05-20 15:52:27,089: ERROR: data_validation: Data validation failed! Expected columns: {'gender', 'phoneService', 'techsupport', 'streamingtv', 'customerid', 'paymentmethod', 'partner', 'onlinebackup', 'deviceprotection', 'seniorcitizen', 'multipleLines', 'totalcharges', 'onlinesecurity', 'dependents', 'monthlycharges', 'paperlessbilling', 'churn', 'tenure', 'contract', 'streamingmovies', 'internetservice'}, Actual columns: {'gender', 'techsupport', 'streamingtv', 'customerid', 'paymentmethod', 'partner', 'onlinebackup', 'deviceprotection', 'seniorcitizen', 'multiplelines', 'totalcharges', 'onlinesecurity', 'dependents', 'monthlycharges', 'phoneservice', 'paperlessbilling', 'churn', 'tenure', 'contract', 'streamingmovies', 'internetservice'}]
+[2026-05-20 15:52:27,090: INFO: main: >>>>>>> stage Data Validation Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 15:58:23,033: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<]
+[2026-05-20 15:58:23,036: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-20 15:58:23,036: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-20 15:58:23,039: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-05-20 15:58:23,040: INFO: common: created directory at: artifacts]
+[2026-05-20 15:58:23,040: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-05-20 15:58:23,040: INFO: data_ingestion: File already exists]
+[2026-05-20 15:58:23,046: INFO: data_ingestion_pipeline: >>>>>>> stage Data Ingestion Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 15:58:23,047: INFO: main: >>>>>>> stage Data Ingestion Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 15:58:23,047: INFO: main: >>>>>>> stage Data Validation Stage started <<<<<<<]
+[2026-05-20 15:58:23,050: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-20 15:58:23,051: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-20 15:58:23,054: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-05-20 15:58:23,054: INFO: common: created directory at: artifacts]
+[2026-05-20 15:58:23,055: INFO: common: created directory at: artifacts/data_validation]
+[2026-05-20 15:58:23,077: ERROR: data_validation: 'Index' object has no attribute 'strip']
+Traceback (most recent call last):
+  File "E:\PROJECT\Customer churn\src\customer_churn_prediction\components\data_validation.py", line 18, in validate_data
+    actual_columns = set(data.columns.str.lower().strip())
+AttributeError: 'Index' object has no attribute 'strip'
+[2026-05-20 15:58:23,078: INFO: main: >>>>>>> stage Data Validation Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 15:59:52,024: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<]
+[2026-05-20 15:59:52,027: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-20 15:59:52,028: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-20 15:59:52,031: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-05-20 15:59:52,031: INFO: common: created directory at: artifacts]
+[2026-05-20 15:59:52,032: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-05-20 15:59:52,032: INFO: data_ingestion: File already exists]
+[2026-05-20 15:59:52,038: INFO: data_ingestion_pipeline: >>>>>>> stage Data Ingestion Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 15:59:52,038: INFO: main: >>>>>>> stage Data Ingestion Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 15:59:52,039: INFO: main: >>>>>>> stage Data Validation Stage started <<<<<<<]
+[2026-05-20 15:59:52,042: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-20 15:59:52,043: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-20 15:59:52,046: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-05-20 15:59:52,046: INFO: common: created directory at: artifacts]
+[2026-05-20 15:59:52,046: INFO: common: created directory at: artifacts/data_validation]
+[2026-05-20 15:59:52,069: ERROR: data_validation: Data validation failed! Expected columns: {'seniorcitizen', 'streamingtv', 'gender', 'dependents', 'onlinebackup', 'churn', 'techsupport', 'deviceprotection', 'internetservice', 'customerid', 'multipleLines', 'partner', 'paymentmethod', 'streamingmovies', 'onlinesecurity', 'totalcharges', 'monthlycharges', 'tenure', 'contract', 'phoneService', 'paperlessbilling'}, Actual columns: {'seniorcitizen', 'streamingtv', 'gender', 'dependents', 'onlinebackup', 'churn', 'techsupport', 'deviceprotection', 'internetservice', 'customerid', 'partner', 'paymentmethod', 'streamingmovies', 'onlinesecurity', 'multiplelines', 'totalcharges', 'monthlycharges', 'tenure', 'phoneservice', 'contract', 'paperlessbilling'}]
+[2026-05-20 15:59:52,069: INFO: main: >>>>>>> stage Data Validation Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 16:06:40,381: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<]
+[2026-05-20 16:06:40,384: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-20 16:06:40,386: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-20 16:06:40,389: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-05-20 16:06:40,389: INFO: common: created directory at: artifacts]
+[2026-05-20 16:06:40,389: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-05-20 16:06:40,390: INFO: data_ingestion: File already exists]
+[2026-05-20 16:06:40,395: INFO: data_ingestion_pipeline: >>>>>>> stage Data Ingestion Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 16:06:40,395: INFO: main: >>>>>>> stage Data Ingestion Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 16:06:40,395: INFO: main: >>>>>>> stage Data Validation Stage started <<<<<<<]
+[2026-05-20 16:06:40,398: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-20 16:06:40,399: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-20 16:06:40,402: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-05-20 16:06:40,402: INFO: common: created directory at: artifacts]
+[2026-05-20 16:06:40,403: INFO: common: created directory at: artifacts/data_validation]
+[2026-05-20 16:06:40,425: INFO: data_validation: Column validation successful! All expected columns are present.]
+[2026-05-20 16:06:40,426: ERROR: data_validation: 'customerid']
+Traceback (most recent call last):
+  File "E:\PROJECT\Customer churn\venv\lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'customerid'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\PROJECT\Customer churn\src\customer_churn_prediction\components\data_validation.py", line 26, in validate_data
+    actual_dtype = data[column].dtype
+  File "E:\PROJECT\Customer churn\venv\lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "E:\PROJECT\Customer churn\venv\lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'customerid'
+[2026-05-20 16:06:40,431: INFO: main: >>>>>>> stage Data Validation Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 16:07:11,441: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<]
+[2026-05-20 16:07:11,445: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-20 16:07:11,445: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-20 16:07:11,449: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-05-20 16:07:11,449: INFO: common: created directory at: artifacts]
+[2026-05-20 16:07:11,450: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-05-20 16:07:11,450: INFO: data_ingestion: File already exists]
+[2026-05-20 16:07:11,455: INFO: data_ingestion_pipeline: >>>>>>> stage Data Ingestion Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 16:07:11,455: INFO: main: >>>>>>> stage Data Ingestion Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 16:07:11,456: INFO: main: >>>>>>> stage Data Validation Stage started <<<<<<<]
+[2026-05-20 16:07:11,459: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-20 16:07:11,459: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-20 16:07:11,463: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-05-20 16:07:11,463: INFO: common: created directory at: artifacts]
+[2026-05-20 16:07:11,464: INFO: common: created directory at: artifacts/data_validation]
+[2026-05-20 16:07:11,486: INFO: data_validation: Column validation successful! All expected columns are present.]
+[2026-05-20 16:07:11,487: ERROR: data_validation: 'customerid']
+Traceback (most recent call last):
+  File "E:\PROJECT\Customer churn\venv\lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'customerid'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\PROJECT\Customer churn\src\customer_churn_prediction\components\data_validation.py", line 26, in validate_data
+    actual_dtype = data[column].dtype
+  File "E:\PROJECT\Customer churn\venv\lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "E:\PROJECT\Customer churn\venv\lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'customerid'
+[2026-05-20 16:07:11,491: INFO: main: >>>>>>> stage Data Validation Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 16:08:18,602: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<]
+[2026-05-20 16:08:18,605: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-20 16:08:18,606: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-20 16:08:18,609: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-05-20 16:08:18,610: INFO: common: created directory at: artifacts]
+[2026-05-20 16:08:18,610: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-05-20 16:08:18,610: INFO: data_ingestion: File already exists]
+[2026-05-20 16:08:18,616: INFO: data_ingestion_pipeline: >>>>>>> stage Data Ingestion Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 16:08:18,616: INFO: main: >>>>>>> stage Data Ingestion Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 16:08:18,616: INFO: main: >>>>>>> stage Data Validation Stage started <<<<<<<]
+[2026-05-20 16:08:18,620: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-20 16:08:18,620: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-20 16:08:18,624: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-05-20 16:08:18,624: INFO: common: created directory at: artifacts]
+[2026-05-20 16:08:18,625: INFO: common: created directory at: artifacts/data_validation]
+[2026-05-20 16:08:18,648: INFO: data_validation: Column validation successful! All expected columns are present.]
+[2026-05-20 16:08:18,648: ERROR: data_validation: 'customerid']
+Traceback (most recent call last):
+  File "E:\PROJECT\Customer churn\venv\lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'customerid'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\PROJECT\Customer churn\src\customer_churn_prediction\components\data_validation.py", line 26, in validate_data
+    actual_dtype = data[column].dtype
+  File "E:\PROJECT\Customer churn\venv\lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "E:\PROJECT\Customer churn\venv\lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'customerid'
+[2026-05-20 16:08:18,653: INFO: main: >>>>>>> stage Data Validation Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 16:09:35,700: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<]
+[2026-05-20 16:09:35,704: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-20 16:09:35,705: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-20 16:09:35,708: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-05-20 16:09:35,709: INFO: common: created directory at: artifacts]
+[2026-05-20 16:09:35,709: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-05-20 16:09:35,709: INFO: data_ingestion: File already exists]
+[2026-05-20 16:09:35,715: INFO: data_ingestion_pipeline: >>>>>>> stage Data Ingestion Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 16:09:35,715: INFO: main: >>>>>>> stage Data Ingestion Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 16:09:35,715: INFO: main: >>>>>>> stage Data Validation Stage started <<<<<<<]
+[2026-05-20 16:09:35,719: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-20 16:09:35,720: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-20 16:09:35,723: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-05-20 16:09:35,724: INFO: common: created directory at: artifacts]
+[2026-05-20 16:09:35,724: INFO: common: created directory at: artifacts/data_validation]
+[2026-05-20 16:09:35,747: INFO: data_validation: Column validation successful! All expected columns are present.]
+[2026-05-20 16:09:35,749: INFO: main: >>>>>>> stage Data Validation Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 16:59:05,046: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<]
+[2026-05-20 16:59:05,049: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-20 16:59:05,050: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-20 16:59:05,053: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-05-20 16:59:05,054: INFO: common: created directory at: artifacts]
+[2026-05-20 16:59:05,054: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-05-20 16:59:05,055: INFO: data_ingestion: File already exists]
+[2026-05-20 16:59:05,060: INFO: data_ingestion_pipeline: >>>>>>> stage Data Ingestion Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 16:59:05,060: INFO: main: >>>>>>> stage Data Ingestion Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 16:59:05,060: INFO: main: >>>>>>> stage Data Validation Stage started <<<<<<<]
+[2026-05-20 16:59:05,064: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-20 16:59:05,064: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-20 16:59:05,067: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-05-20 16:59:05,067: INFO: common: created directory at: artifacts]
+[2026-05-20 16:59:05,068: INFO: common: created directory at: artifacts/data_validation]
+[2026-05-20 16:59:05,089: INFO: data_validation: Column validation successful! All expected columns are present.]
+[2026-05-20 16:59:05,091: INFO: main: >>>>>>> stage Data Validation Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 16:59:05,091: INFO: main: >>>>>>> stage Data Transformation Stage started <<<<<<<]
+[2026-05-20 16:59:05,091: ERROR: data_transformation_pipeline: name 'Path' is not defined]
+Traceback (most recent call last):
+  File "E:\PROJECT\Customer churn\src\customer_churn_prediction\pipeline\data_transformation_pipeline.py", line 14, in InitializeDataTransformationPipeline
+    with open(Path("artifacts/data_validation/status.txt"), "r") as f:
+NameError: name 'Path' is not defined
+[2026-05-20 16:59:05,092: ERROR: main: name 'Path' is not defined]
+Traceback (most recent call last):
+  File "E:\PROJECT\Customer churn\main.py", line 32, in <module>
+    obj.InitializeDataTransformationPipeline()
+  File "E:\PROJECT\Customer churn\src\customer_churn_prediction\pipeline\data_transformation_pipeline.py", line 25, in InitializeDataTransformationPipeline
+    raise e
+  File "E:\PROJECT\Customer churn\src\customer_churn_prediction\pipeline\data_transformation_pipeline.py", line 14, in InitializeDataTransformationPipeline
+    with open(Path("artifacts/data_validation/status.txt"), "r") as f:
+NameError: name 'Path' is not defined
+[2026-05-20 16:59:25,301: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<]
+[2026-05-20 16:59:25,304: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-20 16:59:25,305: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-20 16:59:25,309: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-05-20 16:59:25,309: INFO: common: created directory at: artifacts]
+[2026-05-20 16:59:25,310: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-05-20 16:59:25,310: INFO: data_ingestion: File already exists]
+[2026-05-20 16:59:25,317: INFO: data_ingestion_pipeline: >>>>>>> stage Data Ingestion Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 16:59:25,318: INFO: main: >>>>>>> stage Data Ingestion Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 16:59:25,318: INFO: main: >>>>>>> stage Data Validation Stage started <<<<<<<]
+[2026-05-20 16:59:25,321: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-20 16:59:25,322: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-20 16:59:25,325: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-05-20 16:59:25,325: INFO: common: created directory at: artifacts]
+[2026-05-20 16:59:25,325: INFO: common: created directory at: artifacts/data_validation]
+[2026-05-20 16:59:25,347: INFO: data_validation: Column validation successful! All expected columns are present.]
+[2026-05-20 16:59:25,348: INFO: main: >>>>>>> stage Data Validation Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 16:59:25,349: INFO: main: >>>>>>> stage Data Transformation Stage started <<<<<<<]
+[2026-05-20 16:59:25,352: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-20 16:59:25,353: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-20 16:59:25,355: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-05-20 16:59:25,356: INFO: common: created directory at: artifacts]
+[2026-05-20 16:59:25,356: INFO: common: created directory at: artifacts/data_transformation]
+[2026-05-20 16:59:25,461: INFO: data_transformation: Data split successful!]
+[2026-05-20 16:59:25,462: INFO: main: >>>>>>> stage Data Transformation Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 17:47:35,442: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<]
+[2026-05-20 17:47:35,445: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-20 17:47:35,446: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-20 17:47:35,446: ERROR: main: yaml file is empty]
+Traceback (most recent call last):
+  File "E:\PROJECT\Customer churn\src\customer_churn_prediction\utils\common.py", line 31, in read_yaml
+    return ConfigBox(content)
+  File "box/box.py", line 301, in box.box.Box.__init__
+box.exceptions.BoxValueError: First argument must be mapping or iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\PROJECT\Customer churn\main.py", line 13, in <module>
+    obj.InitiateDataIngestionTrainingPipeline()
+  File "E:\PROJECT\Customer churn\src\customer_churn_prediction\pipeline\data_ingestion_pipeline.py", line 13, in InitiateDataIngestionTrainingPipeline
+    config=ConfigurationManager()
+  File "E:\PROJECT\Customer churn\src\customer_churn_prediction\config\configuration.py", line 12, in __init__
+    self.params=read_yaml(params_filepath)
+  File "E:\PROJECT\Customer churn\venv\lib\site-packages\ensure\main.py", line 872, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "E:\PROJECT\Customer churn\src\customer_churn_prediction\utils\common.py", line 33, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2026-05-20 17:47:52,962: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<]
+[2026-05-20 17:47:52,966: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-20 17:47:52,966: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-20 17:47:52,969: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-05-20 17:47:52,970: INFO: common: created directory at: artifacts]
+[2026-05-20 17:47:52,970: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-05-20 17:47:52,971: INFO: data_ingestion: File already exists]
+[2026-05-20 17:47:52,976: INFO: data_ingestion_pipeline: >>>>>>> stage Data Ingestion Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 17:47:52,976: INFO: main: >>>>>>> stage Data Ingestion Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 17:47:52,976: INFO: main: >>>>>>> stage Data Validation Stage started <<<<<<<]
+[2026-05-20 17:47:52,980: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-20 17:47:52,980: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-20 17:47:52,983: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-05-20 17:47:52,984: INFO: common: created directory at: artifacts]
+[2026-05-20 17:47:52,984: INFO: common: created directory at: artifacts/data_validation]
+[2026-05-20 17:47:53,005: INFO: data_validation: Column validation successful! All expected columns are present.]
+[2026-05-20 17:47:53,007: INFO: main: >>>>>>> stage Data Validation Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 17:47:53,007: INFO: main: >>>>>>> stage Data Transformation Stage started <<<<<<<]
+[2026-05-20 17:47:53,011: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-20 17:47:53,011: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-20 17:47:53,014: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-05-20 17:47:53,015: INFO: common: created directory at: artifacts]
+[2026-05-20 17:47:53,015: INFO: common: created directory at: artifacts/data_transformation]
+[2026-05-20 17:47:53,122: INFO: data_transformation: Data split successful!]
+[2026-05-20 17:47:53,123: INFO: main: >>>>>>> stage Data Transformation Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 17:47:53,123: INFO: main: >>>>>>> stage Model Trainer Stage started <<<<<<<]
+[2026-05-20 17:47:53,126: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-20 17:47:53,127: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-20 17:47:53,130: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-05-20 17:47:53,130: INFO: common: created directory at: artifacts]
+[2026-05-20 17:47:53,130: ERROR: model_training_pipeline: "'ConfigBox' object has no attribute 'xgboost'"]
+Traceback (most recent call last):
+  File "box/box.py", line 605, in box.box.Box.__getitem__
+KeyError: 'xgboost'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 644, in box.box.Box.__getattr__
+  File "box/box.py", line 632, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'xgboost'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 646, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'xgboost'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 660, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'xgboost'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 605, in box.box.Box.__getitem__
+KeyError: 'xgboost'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 644, in box.box.Box.__getattr__
+  File "box/box.py", line 632, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'xgboost'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 646, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'xgboost'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\PROJECT\Customer churn\src\customer_churn_prediction\pipeline\model_training_pipeline.py", line 17, in InitiateModelTrainerPipeline
+    model_trainer_config = config.get_model_trainer_config()
+  File "E:\PROJECT\Customer churn\src\customer_churn_prediction\config\configuration.py", line 54, in get_model_trainer_config
+    params = self.params.xgboost
+  File "box/config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 660, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'xgboost'"
+[2026-05-20 17:47:53,132: ERROR: main: "'ConfigBox' object has no attribute 'xgboost'"]
+Traceback (most recent call last):
+  File "box/box.py", line 605, in box.box.Box.__getitem__
+KeyError: 'xgboost'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 644, in box.box.Box.__getattr__
+  File "box/box.py", line 632, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'xgboost'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 646, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'xgboost'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 660, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'xgboost'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 605, in box.box.Box.__getitem__
+KeyError: 'xgboost'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 644, in box.box.Box.__getattr__
+  File "box/box.py", line 632, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'xgboost'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 646, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'xgboost'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\PROJECT\Customer churn\main.py", line 43, in <module>
+    obj.InitiateModelTrainerPipeline()
+  File "E:\PROJECT\Customer churn\src\customer_churn_prediction\pipeline\model_training_pipeline.py", line 23, in InitiateModelTrainerPipeline
+    raise e
+  File "E:\PROJECT\Customer churn\src\customer_churn_prediction\pipeline\model_training_pipeline.py", line 17, in InitiateModelTrainerPipeline
+    model_trainer_config = config.get_model_trainer_config()
+  File "E:\PROJECT\Customer churn\src\customer_churn_prediction\config\configuration.py", line 54, in get_model_trainer_config
+    params = self.params.xgboost
+  File "box/config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 660, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'xgboost'"
+[2026-05-20 17:48:20,444: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<]
+[2026-05-20 17:48:20,448: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-20 17:48:20,448: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-20 17:48:20,451: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-05-20 17:48:20,452: INFO: common: created directory at: artifacts]
+[2026-05-20 17:48:20,452: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-05-20 17:48:20,453: INFO: data_ingestion: File already exists]
+[2026-05-20 17:48:20,458: INFO: data_ingestion_pipeline: >>>>>>> stage Data Ingestion Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 17:48:20,458: INFO: main: >>>>>>> stage Data Ingestion Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 17:48:20,458: INFO: main: >>>>>>> stage Data Validation Stage started <<<<<<<]
+[2026-05-20 17:48:20,461: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-20 17:48:20,462: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-20 17:48:20,465: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-05-20 17:48:20,465: INFO: common: created directory at: artifacts]
+[2026-05-20 17:48:20,465: INFO: common: created directory at: artifacts/data_validation]
+[2026-05-20 17:48:20,487: INFO: data_validation: Column validation successful! All expected columns are present.]
+[2026-05-20 17:48:20,489: INFO: main: >>>>>>> stage Data Validation Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 17:48:20,489: INFO: main: >>>>>>> stage Data Transformation Stage started <<<<<<<]
+[2026-05-20 17:48:20,493: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-20 17:48:20,493: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-20 17:48:20,496: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-05-20 17:48:20,497: INFO: common: created directory at: artifacts]
+[2026-05-20 17:48:20,497: INFO: common: created directory at: artifacts/data_transformation]
+[2026-05-20 17:48:20,602: INFO: data_transformation: Data split successful!]
+[2026-05-20 17:48:20,603: INFO: main: >>>>>>> stage Data Transformation Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 17:48:20,603: INFO: main: >>>>>>> stage Model Trainer Stage started <<<<<<<]
+[2026-05-20 17:48:20,606: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-20 17:48:20,607: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-20 17:48:20,610: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-05-20 17:48:20,610: INFO: common: created directory at: artifacts]
+[2026-05-20 17:48:20,611: INFO: common: created directory at: artifacts/model_trainer]
+[2026-05-20 17:48:20,631: INFO: model_training: Running RandomizedSearchCV for Logistic Regression]
+[2026-05-20 17:48:23,622: INFO: model_training: Logistic Regression Accuracy: 0.7370291400142146]
+[2026-05-20 17:48:23,622: INFO: model_training: Logistic Regression F1 Score: 0.6169772256728778]
+[2026-05-20 17:48:23,622: INFO: model_training: Logistic Regression Recall: 0.7967914438502673]
+[2026-05-20 17:48:23,622: INFO: model_training: Running RandomizedSearchCV for Random Forest]
+[2026-05-20 17:48:35,771: INFO: model_training: Random Forest Accuracy: 0.7427149964463398]
+[2026-05-20 17:48:35,771: INFO: model_training: Random Forest F1 Score: 0.5968819599109132]
+[2026-05-20 17:48:35,772: INFO: model_training: Random Forest Recall: 0.7165775401069518]
+[2026-05-20 17:48:35,772: INFO: model_training: Running RandomizedSearchCV for XGBoost]
+[2026-05-20 17:48:40,584: INFO: model_training: XGBoost Accuracy: 0.759772565742715]
+[2026-05-20 17:48:40,584: INFO: model_training: XGBoost F1 Score: 0.6141552511415526]
+[2026-05-20 17:48:40,584: INFO: model_training: XGBoost Recall: 0.7192513368983957]
+[2026-05-20 17:48:40,584: INFO: model_training: Saving the trained model...]
+[2026-05-20 17:48:40,588: INFO: main: >>>>>>> stage Model Trainer Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 17:49:41,241: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<]
+[2026-05-20 17:49:41,244: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-20 17:49:41,245: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-20 17:49:41,248: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-05-20 17:49:41,248: INFO: common: created directory at: artifacts]
+[2026-05-20 17:49:41,249: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-05-20 17:49:41,249: INFO: data_ingestion: File already exists]
+[2026-05-20 17:49:41,254: INFO: data_ingestion_pipeline: >>>>>>> stage Data Ingestion Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 17:49:41,255: INFO: main: >>>>>>> stage Data Ingestion Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 17:49:41,255: INFO: main: >>>>>>> stage Data Validation Stage started <<<<<<<]
+[2026-05-20 17:49:41,259: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-20 17:49:41,259: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-20 17:49:41,262: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-05-20 17:49:41,263: INFO: common: created directory at: artifacts]
+[2026-05-20 17:49:41,263: INFO: common: created directory at: artifacts/data_validation]
+[2026-05-20 17:49:41,283: INFO: data_validation: Column validation successful! All expected columns are present.]
+[2026-05-20 17:49:41,285: INFO: main: >>>>>>> stage Data Validation Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 17:49:41,285: INFO: main: >>>>>>> stage Data Transformation Stage started <<<<<<<]
+[2026-05-20 17:49:41,289: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-20 17:49:41,289: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-20 17:49:41,292: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-05-20 17:49:41,293: INFO: common: created directory at: artifacts]
+[2026-05-20 17:49:41,293: INFO: common: created directory at: artifacts/data_transformation]
+[2026-05-20 17:49:41,399: INFO: data_transformation: Data split successful!]
+[2026-05-20 17:49:41,399: INFO: main: >>>>>>> stage Data Transformation Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 17:49:41,399: INFO: main: >>>>>>> stage Model Trainer Stage started <<<<<<<]
+[2026-05-20 17:49:41,402: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-20 17:49:41,403: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-20 17:49:41,406: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-05-20 17:49:41,407: INFO: common: created directory at: artifacts]
+[2026-05-20 17:49:41,407: INFO: common: created directory at: artifacts/model_trainer]
+[2026-05-20 17:49:41,427: INFO: model_training: Running RandomizedSearchCV for Logistic Regression]
+[2026-05-20 17:49:44,344: INFO: model_training: Logistic Regression Accuracy: 0.7370291400142146]
+[2026-05-20 17:49:44,344: INFO: model_training: Logistic Regression F1 Score: 0.6169772256728778]
+[2026-05-20 17:49:44,345: INFO: model_training: Logistic Regression Recall: 0.7967914438502673]
+[2026-05-20 17:49:44,345: INFO: model_training: Running RandomizedSearchCV for Random Forest]
+[2026-05-20 17:49:56,708: INFO: model_training: Random Forest Accuracy: 0.7491115849324804]
+[2026-05-20 17:49:56,708: INFO: model_training: Random Forest F1 Score: 0.6029246344206974]
+[2026-05-20 17:49:56,708: INFO: model_training: Random Forest Recall: 0.7165775401069518]
+[2026-05-20 17:49:56,708: INFO: model_training: Running RandomizedSearchCV for XGBoost]
+[2026-05-20 17:50:01,480: INFO: model_training: XGBoost Accuracy: 0.759772565742715]
+[2026-05-20 17:50:01,480: INFO: model_training: XGBoost F1 Score: 0.6141552511415526]
+[2026-05-20 17:50:01,480: INFO: model_training: XGBoost Recall: 0.7192513368983957]
+[2026-05-20 17:50:01,481: INFO: model_training: Saving the trained model...]
+[2026-05-20 17:50:01,484: INFO: main: >>>>>>> stage Model Trainer Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 17:53:20,118: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<]
+[2026-05-20 17:53:20,122: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-20 17:53:20,122: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-20 17:53:20,125: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-05-20 17:53:20,126: INFO: common: created directory at: artifacts]
+[2026-05-20 17:53:20,126: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-05-20 17:53:20,127: INFO: data_ingestion: File already exists]
+[2026-05-20 17:53:20,132: INFO: data_ingestion_pipeline: >>>>>>> stage Data Ingestion Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 17:53:20,132: INFO: main: >>>>>>> stage Data Ingestion Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 17:53:20,132: INFO: main: >>>>>>> stage Data Validation Stage started <<<<<<<]
+[2026-05-20 17:53:20,135: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-20 17:53:20,136: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-20 17:53:20,140: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-05-20 17:53:20,140: INFO: common: created directory at: artifacts]
+[2026-05-20 17:53:20,141: INFO: common: created directory at: artifacts/data_validation]
+[2026-05-20 17:53:20,163: INFO: data_validation: Column validation successful! All expected columns are present.]
+[2026-05-20 17:53:20,165: INFO: main: >>>>>>> stage Data Validation Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 17:53:20,165: INFO: main: >>>>>>> stage Data Transformation Stage started <<<<<<<]
+[2026-05-20 17:53:20,169: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-20 17:53:20,169: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-20 17:53:20,172: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-05-20 17:53:20,173: INFO: common: created directory at: artifacts]
+[2026-05-20 17:53:20,173: INFO: common: created directory at: artifacts/data_transformation]
+[2026-05-20 17:53:20,304: INFO: data_transformation: Data split successful!]
+[2026-05-20 17:53:20,305: INFO: main: >>>>>>> stage Data Transformation Stage completed <<<<<<<
+
+x==========x]
+[2026-05-20 17:53:20,305: INFO: main: >>>>>>> stage Model Trainer Stage started <<<<<<<]
+[2026-05-20 17:53:20,308: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-20 17:53:20,309: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-20 17:53:20,313: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-05-20 17:53:20,313: INFO: common: created directory at: artifacts]
+[2026-05-20 17:53:20,314: INFO: common: created directory at: artifacts/model_trainer]
+[2026-05-20 17:53:20,338: INFO: model_training: Running RandomizedSearchCV for Logistic Regression]
+[2026-05-20 17:53:23,548: INFO: model_training: Logistic Regression Accuracy: 0.7370291400142146]
+[2026-05-20 17:53:23,548: INFO: model_training: Logistic Regression F1 Score: 0.6169772256728778]
+[2026-05-20 17:53:23,548: INFO: model_training: Logistic Regression Recall: 0.7967914438502673]
+[2026-05-20 17:53:23,548: INFO: model_training: Running RandomizedSearchCV for Random Forest]
+[2026-05-20 17:53:35,815: INFO: model_training: Random Forest Accuracy: 0.7491115849324804]
+[2026-05-20 17:53:35,815: INFO: model_training: Random Forest F1 Score: 0.6011299435028249]
+[2026-05-20 17:53:35,815: INFO: model_training: Random Forest Recall: 0.7112299465240641]
+[2026-05-20 17:53:35,815: INFO: model_training: Running RandomizedSearchCV for XGBoost]
+[2026-05-20 17:53:40,585: INFO: model_training: XGBoost Accuracy: 0.759772565742715]
+[2026-05-20 17:53:40,585: INFO: model_training: XGBoost F1 Score: 0.6141552511415526]
+[2026-05-20 17:53:40,585: INFO: model_training: XGBoost Recall: 0.7192513368983957]
+[2026-05-20 17:53:40,585: INFO: model_training: Saving the trained model...]
+[2026-05-20 17:53:40,589: INFO: main: >>>>>>> stage Model Trainer Stage completed <<<<<<<
+
+x==========x]
