@@ -1,0 +1,2 @@
+[ 2026-05-20 14:08:25,663 ] 20 root - INFO - Entered the data ingestion method or component
+[ 2026-05-20 14:08:25,664 ] 50 root - ERROR - Error occurred while initiating data ingestion: Error occured in python script name [E:\PROJECT\Customer churn\src\components\data_ingestion.py] line number [22] error message[[Errno 2] No such file or directory: 'notebook\\data\\WA_Fn-UseC_-Telco-Customer-Churn.csv']
