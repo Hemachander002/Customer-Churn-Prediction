@@ -1,5 +1,6 @@
 #from src.customer_churn_prediction.pipeline.model_evaluation_pipeline import ModelEvaluationPipeline
 #from src.laptop_price_prediction.pipeline.model_training_pipeline import ModelTrainerPipeline
+from src.customer_churn_prediction.pipeline.model_evaluation_pipeline import ModelEvaluationPipeline
 from src.customer_churn_prediction.pipeline.model_training_pipeline import ModelTrainerPipeline
 from src.customer_churn_prediction.pipeline.data_validation_pipeline import DataValidationPipeline
 from src.customer_churn_prediction import logger
@@ -44,4 +45,11 @@ try:
     logger.info(f">>>>>>> stage {STAGE_NAME} completed <<<<<<<\n\nx==========x")
 except Exception as e:
     logger.exception(e)
+    raise e
+
+STAGE_NAME = "Model Evaluation Stage"
+try:
+    model_eval_pipeline = ModelEvaluationPipeline()
+    model_eval_pipeline.InitiateModelEvaluation()
+except Exception as e:
     raise e

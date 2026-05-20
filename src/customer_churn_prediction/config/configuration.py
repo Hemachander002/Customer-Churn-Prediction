@@ -74,7 +74,6 @@ class ConfigurationManager:
             model_path = config.model_path,
             metric_file_name = config.metric_file_name,
             target_column = schema.name,
-            mlflow_uri = "https://dagshub.com/Hemachander002/Laptop-Pred-v2.mlflow",
-            all_params = params
+            mlflow_uri = "https://dagshub.com/Hemachander002/Customer-Churn-Prediction.mlflow",
         )
         return model_evaluation_config
