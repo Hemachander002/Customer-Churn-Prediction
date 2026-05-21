@@ -135,7 +135,11 @@ Exportable as downloadable PDF reports.
 
 ## Deployment
 - AWS Elastic Beanstalk (Planned)
-
+<img width="1919" height="1039" alt="cus front page" src="https://github.com/user-attachments/assets/5a0123a3-1ff4-4e25-bb54-abacc012df2f" />
+<img width="1911" height="1041" alt="cus_after_uploading_csv" src="https://github.com/user-attachments/assets/66c8b774-b324-4107-bbab-f6df3b96a6b7" />
+<img width="1916" height="1039" alt="cus_top_high_customers" src="https://github.com/user-attachments/assets/06be6618-6d97-4049-86c8-a524e0a3d660" />
+<img width="1919" height="1034" alt="cus_showing_distrubution" src="https://github.com/user-attachments/assets/c60e8202-019f-4031-b5a6-17c705dec204" />
+<img width="1907" height="1039" alt="cus_showing_dist2" src="https://github.com/user-attachments/assets/f8ea62eb-7a8b-4351-bcf6-13a1a36d6aeb" />
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # AUTHOR
